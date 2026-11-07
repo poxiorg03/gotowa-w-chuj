@@ -1,0 +1,85 @@
+# Startowy rozmiar działki to 32x32. Maksimum 250x250. Brak poziomów działki; kupuje się tylko powiększenie obszaru.
+rozmiar-dzialki:
+  wlaczone: true
+  platnosc:
+    bank-dzialki: true
+    konto-gracza: true
+  ulepszenia:
+    64: {cena: 10000}
+    96: {cena: 25000}
+    128: {cena: 50000}
+    160: {cena: 80000}
+    192: {cena: 120000}
+    224: {cena: 180000}
+    250: {cena: 250000}
+maksymalna-liczba-kopii: 20
+zablokowane-swiaty: []
+ustawienia-domyslne:
+  pvp: false
+  potwory: false
+  zwierzeta: true
+  wejscie: true
+  skrzynie: false
+  drzwi: false
+  eksplozje: false
+  ogien: false
+  latanie: false
+  noc: false
+
+# Jedna cena zakupu Bloku Działki. Limity rang przez LuckPerms: dzialka.limit.2 do dzialka.limit.5 oraz dzialka.limit.unlimited.
+sklep:
+  cena-bloku: 10000
+
+# Ceny ulepszeń mechanizmów (przejście NA wskazany poziom). Wszystkie kwoty edytowalne.
+ulepszenia:
+  platnosc:
+    bank-dzialki: true
+    konto-gracza: true
+  hoppery:
+    wlaczone: true
+    poziomy:
+      1: {limit: 10, cena: 0}
+      2: {limit: 20, cena: 5000}
+      3: {limit: 35, cena: 15000}
+  tloki:
+    wlaczone: true
+    poziomy:
+      1: {limit: 10, cena: 0}
+      2: {limit: 20, cena: 5000}
+      3: {limit: 35, cena: 15000}
+  redstone:
+    wlaczone: true
+    poziomy:
+      1: {limit: 32, cena: 0}
+      2: {limit: 64, cena: 5000}
+      3: {limit: 128, cena: 15000}
+
+# Maksymalna cena działki przy sprzedaży między graczami
+sprzedaz:
+  maksymalna-cena: 1000000000
+
+# Logiczne grupowanie sąsiadujących działek
+laczenie:
+  wlaczone: true
+
+# Etap 13: wyzwanie tygodniowe (reset w poniedziałek o 00:00 UTC)
+wyzwania-tygodniowe:
+  wlaczone: true
+  postaw-bloki:
+    cel: 250
+    nagroda: 5000
+
+# Etap 14: hologram nad Blokiem Działki (TextDisplay).
+hologramy:
+  wlaczone: true
+  pokaz-polubienia: true
+
+# Etap 15: Discord (wklej własny URL webhooka; nigdy nie udostępniaj go publicznie).
+discord:
+  wlaczone: false
+  webhook-url: ""
+  zdarzenia:
+    zakup-bloku: true
+    nowa-dzialka: true
+    sprzedaz: true
+    ulepszenie: true

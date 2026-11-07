@@ -1,0 +1,5 @@
+# Kolory Minecraft: &a, &c, &e, &7 itd.
+prefix: '&8[&aDziałka&8] &7'
+reload: '&aPrzeładowano config.yml i messages.yml.'
+dzialka-utworzona: '&aUtworzono działkę 16x16! Otwórz /dzialka.'
+dzialka-usunieta: '&aDziałka usunięta. Odzyskano Blok Działki.'

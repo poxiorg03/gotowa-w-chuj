@@ -1,0 +1,26 @@
+name: Dzialka
+version: 1.0.0-beta
+main: pl.easymine.dzialka.DzialkaPlugin
+api-version: '1.21'
+softdepend: [Vault, Essentials]
+commands:
+  kupdzialke:
+    description: Otwiera sklep z Blokiem Działki
+  dzialka:
+    description: Zarządzanie działką
+    aliases: [dz, plot]
+permissions:
+  dzialka.admin:
+    default: op
+  easymineplots.admin:
+    default: op
+  dzialka.limit.2:
+    default: false
+  dzialka.limit.3:
+    default: false
+  dzialka.limit.4:
+    default: false
+  dzialka.limit.5:
+    default: false
+  dzialka.limit.unlimited:
+    default: false
